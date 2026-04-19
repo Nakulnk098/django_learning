@@ -19,6 +19,7 @@ from django.urls import path
 from first_app import views
 from django.urls import include
 
+#learning how to include urls from the app into the project urls
 urlpatterns = [
     path('', views.index, name='index'),
     path('first_app/', include('first_app.urls')),
